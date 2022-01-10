@@ -12,9 +12,9 @@ namespace Garage_MVC_WEB_API.Models
         {
         }
 
-        public DbSet<Car> cars { get; set; }
+        public virtual DbSet<Car> cars { get; set; }
 
-        public DbSet<Client> clients { get; set; }
+        public virtual DbSet<Client> clients { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
